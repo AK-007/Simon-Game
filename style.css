@@ -1,0 +1,159 @@
+body {
+  background-color: #E4D6A7;
+  text-align: center;
+  color: #1C110A;
+  user-select: none;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+footer {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.game {
+  height: 472px;
+  width: 472px;
+  background-color: #211A1E;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color {
+  cursor: pointer;
+  height: 215px;
+  width: 215px;
+  display: inline-block;
+  margin: 3px;
+  transition: all ease 0.3s;
+}
+
+#green {
+  background-color: #00a74a;
+  border-radius: 100% 0 0 0;
+}
+
+#red {
+  background-color: #9f0f17;
+  border-radius: 0 100% 0 0;
+}
+
+#blue {
+  background-color: #094a8f;
+  border-radius: 0 0 100% 0;
+}
+
+#yellow {
+  background-color: #cca707;
+  border-radius: 0 0 0 100%;
+}
+
+#center {
+  height: 190px;
+  width: 190px;
+  border-radius: 100%;
+  background-color: #EAEBED;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #211A1E;
+}
+
+.start, .strict {
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  width: 50px;
+  margin: 10px;
+  background-color: #3C91E6;
+  color: white;
+  font-size: 15px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.strict {
+  background-color: #FA824C;
+}
+
+.toggle {
+  background-color: #D6D6D6;
+  border-radius: 1.5em;
+  height: 1.5em;
+  width: 3em;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.toggle.active {
+  background-color: #FF5E5B;
+}
+.toggle.active:before {
+  opacity: 0.5;
+}
+.toggle.active:after {
+  opacity: 1;
+}
+.toggle.active .handle {
+  left: 5.5em;
+}
+
+.toggle:before, .toggle:after {
+  text-align: center;
+  position: absolute;
+  bottom: 2.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all ease 0.5s;
+}
+
+.toggle:before {
+  content: "OFF";
+  left: 1.5em;
+}
+
+.toggle:after {
+  content: "ON";
+  right: 1.7em;
+  opacity: 0.5;
+}
+
+.handle {
+  background-color: white;
+  border-radius: 1.125em;
+  height: 1.125rem;
+  width: 1.125em;
+  position: absolute;
+  bottom: 2.51em;
+  left: 4.1em;
+  transition: all ease 0.5s;
+}
+
+.display {
+  height: 40px;
+  width: 70px;
+  background-color: black;
+  color: #FFFFEA;
+  position: absolute;
+  border-radius: 1.5em;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+  padding-top: 2px;
+}
